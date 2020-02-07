@@ -19,7 +19,7 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 TEST
 ====
 
-Test from PR change 4 5
+Test from PR change 4 5 6
 
 [![Build Status](http://delta.symbioticeda.com/buildStatus/icon?job=TestIntegration)](http://delta.symbioticeda.com/job/TestIntegration/)
 
