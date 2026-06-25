@@ -76,7 +76,7 @@ jobs:
         run: |
           choco install winflexbison3
       - name: Build wheels
-        uses: pypa/cibuildwheel@v3.4.1
+        uses: pypa/cibuildwheel@v4.1.0
         env:
           # * APIs not supported by PyPy
           # * Musllinux disabled because it increases build time from 48m to ~3h
