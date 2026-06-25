@@ -52,7 +52,7 @@ jobs:
           fetch-depth: 0
           submodules: true
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
       - name: Get FFI
         shell: bash
         run: |
