@@ -95,11 +95,13 @@ jobs:
             OPTFLAGS=-O3
             PKG_CONFIG_PATH=./ffi/pfx/lib/pkgconfig
             PATH="$PWD/bison/src:$PATH"
+            CMAKE_ARGS="-DCMAKE_BUILD_TYPE=Release"
           CIBW_ENVIRONMENT_MACOS: >
             OPTFLAGS=-O3
             PKG_CONFIG_PATH=./ffi/pfx/lib/pkgconfig
             MACOSX_DEPLOYMENT_TARGET=11
             PATH="$PWD/bison/src:$PATH"
+            CMAKE_ARGS="-DCMAKE_BUILD_TYPE=Release"
           CIBW_BEFORE_BUILD: bash ./.github/workflows/wheels/cibw_before_build.sh
           CIBW_TEST_COMMAND: python3 {project}/tests/pyosys/run_tests.py
       - uses: actions/upload-artifact@v7
