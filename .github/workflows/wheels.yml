@@ -53,6 +53,8 @@ jobs:
           submodules: true
           persist-credentials: false
       - uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
       - name: Get FFI
         shell: bash
         run: |
@@ -81,9 +83,7 @@ jobs:
           # * APIs not supported by PyPy
           # * Musllinux disabled because it increases build time from 48m to ~3h
           CIBW_SKIP: >
-            cp38*
             cp39*
-            pp*
             *musllinux*
           CIBW_ARCHS: ${{ matrix.os.archs }}
           CIBW_BUILD_VERBOSITY: "1"
