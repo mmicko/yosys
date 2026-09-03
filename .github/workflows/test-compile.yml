@@ -69,7 +69,7 @@ jobs:
           get-build-deps: true
 
       - name: ccache
-        uses: hendrikmuhs/ccache-action@v1.2.23
+        uses: hendrikmuhs/ccache-action@v1.2.24
         with:
           key: test-compile-${{ matrix.os }}-${{ matrix.compiler }}
           save: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
